@@ -1,4 +1,7 @@
-const users = [
+const getUserNames = users => users.map(user => user.name);
+
+console.log(
+  getUserNames([
   {
     name: "Moore Hensley",
     email: "moorehensley@indexia.com",
@@ -34,8 +37,5 @@ const users = [
     email: "shereeanthony@kog.com",
     balance: 2764
   },
-];
-const getUserNames = users.map(user => user.name);
-
-console.log(getUserNames); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
-
+])
+); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
